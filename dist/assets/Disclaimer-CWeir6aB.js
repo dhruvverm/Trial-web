@@ -1,0 +1,1 @@
+import{f as r}from"./vendor-Doo69R1y.js";import{L as i}from"./LegalPage-hmSf0T_y.js";import"./router-CMnA_vWn.js";import"./index-9R7Sj-uK.js";import"./motion-DVjeWtDs.js";import"./PageHero-HnJROswI.js";import"./Breadcrumbs-BN2gRMtd.js";function f(){return r.jsx(i,{slug:"disclaimer"})}export{f as default};
