@@ -1,0 +1,98 @@
+/* ---------------------------------------------------------------
+   Design tokens — single source of truth for colour, type, space.
+   Brand colours are mirrored in src/config/brand.js; change both
+   together if the palette is rebranded.
+   --------------------------------------------------------------- */
+
+:root {
+  /* Brand palette */
+  --navy: #10243a;
+  --navy-700: #1a3c5c;
+  --navy-deep: #0a1829;
+  --forest: #174d3a;
+  --forest-deep: #0f3528;
+  --ivory: #f7f5ef;
+  --ivory-warm: #f1eee4;
+  --gold: #c5a46d;
+  --gold-deep: #a5854c;
+  --white: #ffffff;
+  --charcoal: #292f35;
+  --grey-soft: #e8e9e5;
+
+  /* Derived neutrals */
+  --ink: var(--charcoal);
+  --ink-muted: #5b636b;
+  --ink-faint: #8a9199;
+  --rule: rgba(16, 36, 58, 0.14);
+  --rule-strong: rgba(16, 36, 58, 0.28);
+  --rule-light: rgba(247, 245, 239, 0.18);
+  --rule-light-strong: rgba(247, 245, 239, 0.34);
+
+  /* Typography */
+  --font-serif: "Source Serif 4", "Iowan Old Style", Georgia, "Times New Roman", serif;
+  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+
+  --fs-display: clamp(2.3rem, 1.35rem + 3.6vw, 4rem);
+  --fs-h1: clamp(2rem, 1.3rem + 2.6vw, 3.1rem);
+  --fs-h2: clamp(1.6rem, 1.2rem + 1.5vw, 2.25rem);
+  --fs-h3: clamp(1.25rem, 1.08rem + 0.65vw, 1.55rem);
+  --fs-h4: clamp(1.05rem, 0.99rem + 0.3vw, 1.18rem);
+  --fs-lead: clamp(1.05rem, 0.99rem + 0.35vw, 1.22rem);
+  --fs-body: 1rem;
+  --fs-small: 0.9rem;
+  --fs-micro: 0.78rem;
+  --fs-kicker: 0.72rem;
+
+  --lh-tight: 1.14;
+  --lh-snug: 1.28;
+  --lh-body: 1.65;
+  --tracking-kicker: 0.14em;
+
+  /* Spacing */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --space-8: 64px;
+  --space-9: 88px;
+  --space-10: 120px;
+
+  --section-y: clamp(56px, 7vw, 104px);
+  --section-y-tight: clamp(40px, 5vw, 72px);
+
+  /* Layout */
+  --container: 1200px;
+  --container-narrow: 760px;
+  --container-wide: 1400px;
+  --gutter: clamp(20px, 5vw, 56px);
+  --header-h: 76px;
+
+  /* Shape — deliberately restrained. No pills, no large radii. */
+  --radius-sm: 2px;
+  --radius-md: 3px;
+  --border: 1px solid var(--rule);
+
+  /* Elevation — used sparingly, only for overlays */
+  --shadow-menu: 0 18px 40px -24px rgba(10, 24, 41, 0.45);
+  --shadow-raised: 0 1px 0 rgba(16, 36, 58, 0.06), 0 12px 28px -22px rgba(16, 36, 58, 0.5);
+
+  /* Motion */
+  --ease: cubic-bezier(0.22, 0.61, 0.36, 1);
+  --t-fast: 140ms;
+  --t-base: 240ms;
+  --t-slow: 420ms;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}

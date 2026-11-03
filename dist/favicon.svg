@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Meridian">
+  <rect width="64" height="64" rx="8" fill="#10243A"/>
+  <path d="M32 12a20 20 0 1 0 0 40 20 20 0 0 0 0-40Zm0 3.2c3.3 0 6.9 6.1 7.6 15.2H24.4C25.1 21.3 28.7 15.2 32 15.2Zm0 33.6c-3.3 0-6.9-6.1-7.6-15.2h15.2c-.7 9.1-4.3 15.2-7.6 15.2Z" fill="#C5A46D"/>
+  <path d="M12 30.4h40v3.2H12z" fill="#C5A46D"/>
+</svg>

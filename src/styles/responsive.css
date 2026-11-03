@@ -1,0 +1,49 @@
+/* ===============================================================
+   Responsive corrections and print
+   ===============================================================
+   Layout is written mobile-first in the component and page files;
+   this holds the cross-cutting adjustments that do not belong to a
+   single component.
+   =============================================================== */
+
+/* Nothing should ever cause a horizontal scrollbar. */
+html, body { max-width: 100%; }
+
+img, table, pre, figure { max-width: 100%; }
+
+/* Tables become horizontally scrollable rather than forcing the page wide. */
+@media (max-width: 760px) {
+  .table-scroll { margin-inline: calc(var(--gutter) * -1); padding-inline: var(--gutter); }
+  .data-table { min-width: 520px; }
+}
+
+/* Touch targets stay comfortable on small screens. */
+@media (max-width: 1059px) {
+  .btn { padding: 14px 24px; }
+  .accordion__trigger { padding-block: var(--space-5); }
+}
+
+/* Keep form controls from zooming the viewport on iOS. */
+@media (max-width: 760px) {
+  .field input,
+  .field select,
+  .field textarea { font-size: 16px; }
+}
+
+/* Very small screens: ease the display type down a little further. */
+@media (max-width: 420px) {
+  :root { --fs-display: 2.05rem; --fs-h1: 1.85rem; }
+}
+
+/* Wide screens: stop measure from running away. */
+@media (min-width: 1600px) {
+  :root { --container: 1280px; }
+}
+
+@media print {
+  .header, .footer, .whatsapp-fab, .skip-link, .breadcrumbs, .mobile-menu { display: none !important; }
+  body { color: #000; background: #fff; }
+  .section { padding-block: 16px; }
+  a[href^='http']::after { content: ' (' attr(href) ')'; font-size: 0.8em; color: #555; }
+  .figure { break-inside: avoid; }
+}

@@ -1,0 +1,5 @@
+# Netlify / Cloudflare Pages SPA fallback.
+# Every unknown path is served index.html so React Router can resolve
+# it client-side. Without this, a direct hit on /destinations/canada
+# returns a 404 from the host and search engines never see the page.
+/*  /index.html  200

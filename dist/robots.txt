@@ -1,0 +1,5 @@
+# Meridian Education Advisory
+User-agent: *
+Allow: /
+
+Sitemap: https://www.example.com/sitemap.xml

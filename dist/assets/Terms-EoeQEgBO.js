@@ -1,0 +1,1 @@
+import{f as r}from"./vendor-Doo69R1y.js";import{L as t}from"./LegalPage-0rJDbf73.js";import"./router-CMnA_vWn.js";import"./index-Cexppf0W.js";import"./motion-DVjeWtDs.js";import"./PageHero-Ckgppzxw.js";import"./Breadcrumbs-BN2gRMtd.js";function n(){return r.jsx(t,{slug:"terms-and-conditions"})}export{n as default};
